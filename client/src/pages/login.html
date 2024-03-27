@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../style.css">
+    <title>Vite + TS</title>
+</head>
+
+<body class="container mx-auto">
+    <nav class="flex justify-between bg-gray-950 text-white w-full">
+        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+            <a class="text-3xl font-bold font-heading" href="/">
+                <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+                SureTalk AI
+            </a>
+            <!-- Nav Links -->
+            <!-- <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+            <li><a class="hover:text-gray-200" href="#">Home</a></li>
+            <li><a class="hover:text-gray-200" href="#">Catagory</a></li>
+            <li><a class="hover:text-gray-200" href="#">Collections</a></li>
+            <li><a class="hover:text-gray-200" href="#">Contact Us</a></li>
+          </ul> -->
+            <!-- Header Icons 
+       <div class="hidden xl:flex  space-x-5 items-center">
+            <a class="hover:text-gray-200" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </a>
+            <a class="flex items-center hover:text-gray-200" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <span class="flex absolute -mt-5 ml-4">
+                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                </span>
+              </span>
+            </a>
+         Sign In / Register     
+            <a class="flex items-center hover:text-gray-200" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </a>
+
+          </div>-->
+            <div class="flex justify-end flex-1">
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="./login.html">Iniciar sesion</a>
+                    <a href="./register.html"
+                        class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent">Registrarse
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Responsive navbar -->
+        <a class="xl:hidden flex mr-6 items-center" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="flex absolute -mt-5 ml-4">
+                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                </span>
+            </span>
+        </a>
+        <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </a>
+    </nav>
+
+    <main>
+        <!-- LOGIN FORM -->
+        <section class="max-w-4xl mt-[10%] p-6 mx-auto items-center bg-white rounded-md shadow-md dark:bg-gray-800">
+
+            <div id="successMsgLogin" class="text-2xl text-green-400"></div>
+            <div id="errorMsgLogin" class="text-2xl text-red-400"></div>
+            <h2 class="text-lg font-semibold text-gray-700 dark:text-white">Por favor, complete sus datos.
+            </h2>
+            <form id="formLogin">
+                <div class="grid grid-cols-1 gap-6 mt-4">
+                    <div>
+                        <label class="text-gray-700 dark:text-gray-200">Email</label>
+                        <input id="emailAddressLogin" type="email" autocomplete="email"
+                            class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+                    </div>
+
+                    <div>
+                        <label class="text-gray-700 dark:text-gray-200">Contraseña</label>
+                        <input id="passwordLogin" type="password" autocomplete="current-password"
+                            class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+                    </div>
+
+                </div>
+
+                <div class="flex justify-end mt-6">
+                    <button
+                        class="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
+                        type="submit">Ingresar</button>
+                </div>
+                <div class="hidden items-center" id="spinnerLogin">
+                    <p class="text-white text-2xl animate-bounce">Procesando...</p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="../scripts/windows.ts"></script>
+    <script type="module" src="../main.ts"></script>
+</body>
+
+</html>

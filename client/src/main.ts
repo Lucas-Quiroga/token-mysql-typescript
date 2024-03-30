@@ -163,6 +163,9 @@ if (formLogin) {
   
             // Mostramos un mensaje de éxito
             showMessage(successMsgLogin, responseData.message)
+
+            //rediireccionamos al usuario a la pagina init.html
+            window.location.href = 'init.html';
           }
         }
       } catch (error) {
@@ -171,5 +174,7 @@ if (formLogin) {
     });
 }
 
-
 });
+
+
+

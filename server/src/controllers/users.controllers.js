@@ -115,10 +115,10 @@ export const loginUser = async (req, res) => {
       expires: new Date(
         Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
       ),
-      httpOnly: true,
+      httpOnly: false,
       path: "/",
-      secure: process.env.NODE_ENV === "production" ? true : false,
-      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+      secure: true,
+      sameSite: "none",
     };
 
     res.cookie("jwt", token, cookieOptions);

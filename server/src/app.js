@@ -21,6 +21,7 @@ app.use((req, res, next) => {
   );
   next();
 });
+
 // esto hace que no se muestre la cabecera de express, para que no se sepa que tecnologia se esta usando (security)
 app.disable("x-powered-by");
 app.use(express.json());

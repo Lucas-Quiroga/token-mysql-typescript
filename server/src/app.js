@@ -1,7 +1,10 @@
 import express from "express";
 import authRoutes from "./routes/authusers.routes.js";
+import chatRoutes from "./routes/chat.routes.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 app.use(
@@ -27,5 +30,6 @@ app.disable("x-powered-by");
 app.use(express.json());
 
 app.use("/api", authRoutes);
+app.use("/api", chatRoutes);
 
 export default app;

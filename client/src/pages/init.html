@@ -51,8 +51,8 @@
     </div>
 
     <div class="space-y-1.5 flex justify-center flex-col items-center ">
-        <h1 class="text-3xl font-bold">Login Successful!</h1>
-        <p class="text-gray-500 dark:text-gray-400">Welcome, user!</p>
+
+        <p class="text-gray-500 dark:text-gray-400 my-10">Welcome, user!</p>
     </div>
 
     <div class="w-full max-w-3xl mx-auto space-y-4">
@@ -69,80 +69,29 @@
                 </button>
                 <h1 class="text-2xl font-bold">Support</h1>
             </div>
-            <div class="rounded-lg border shadow-sm p-4 h-[400px] overflow-hidden">
-                <div class="grid gap-4">
-                    <div class="flex space-x-4 items-start">
-                        <div class="flex flex-col items-center space-y-1">
-                            <div class="text-xs font-medium text-gray-500 dark:text-gray-400">3:01 PM</div>
-                            <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full order-1">
-                                <span
-                                    class="flex h-full w-full items-center justify-center rounded-full bg-muted">AC</span>
-                            </span>
-                        </div>
-                        <div class="grid gap-1.5">
-                            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm p-4">
-                                Hi there! How can we help you today?
-                            </div>
-                            <div class="text-xs text-gray-500 dark:text-gray-400">Support Team</div>
-                        </div>
-                    </div>
-                    <div class="flex space-x-4 items-start justify-end">
-                        <div class="grid gap-1.5">
-                            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm p-4">
-                                Hi! I'm having trouble with my recent order. Can you help me track it?
-                            </div>
-                            <div class="text-xs text-gray-500 dark:text-gray-400">You</div>
-                        </div>
-                        <div class="flex flex-col items-center space-y-1">
-                            <div class="text-xs font-medium text-gray-500 dark:text-gray-400">3:02 PM</div>
-                            <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full order-1">
-                                <span
-                                    class="flex h-full w-full items-center justify-center rounded-full bg-muted">AC</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="flex space-x-4 items-start">
-                        <div class="flex flex-col items-center space-y-1">
-                            <div class="text-xs font-medium text-gray-500 dark:text-gray-400">3:03 PM</div>
-                            <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full order-1">
-                                <span
-                                    class="flex h-full w-full items-center justify-center rounded-full bg-muted">AC</span>
-                            </span>
-                        </div>
-                        <div class="grid gap-1.5">
-                            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm p-4">
-                                Sure! Please provide me with your order number and I'll look it up for you.
-                            </div>
-                            <div class="text-xs text-gray-500 dark:text-gray-400">Support Team</div>
-                        </div>
-                    </div>
-                    <div class="flex space-x-4 items-start justify-end">
-                        <div class="grid gap-1.5">
-                            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm p-4">
-                                My order number is #123456789. Thank you!
-                            </div>
-                            <div class="text-xs text-gray-500 dark:text-gray-400">You</div>
-                        </div>
-                        <div class="flex flex-col items-center space-y-1">
-                            <div class="text-xs font-medium text-gray-500 dark:text-gray-400">3:04 PM</div>
-                            <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full order-1">
-                                <span
-                                    class="flex h-full w-full items-center justify-center rounded-full bg-muted">AC</span>
-                            </span>
-                        </div>
-                    </div>
+            <div class="rounded-lg border shadow-sm p-4 h-[600px] overflow-y-scroll">
+                <div class="grid gap-4" id="chat-container">
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>
-        <div class="flex space-x-4">
+        <form class="flex space-x-4" id="form-chat">
             <input
                 class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1"
-                placeholder="Type a message" type="text" />
+                placeholder="Type a message" type="text" id="input-message" />
             <button
-                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-primary/90 h-10 px-4 py-2">
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-primary/90 h-10 px-4 py-2"
+                type="submit" id="btn_submit">
                 Send
             </button>
-        </div>
+        </form>
     </div>
     <!-- Add your desired content here -->
     <script>
@@ -154,6 +103,7 @@
             }
         }
     </script>
+    <script src="../scripts/chat.ts"></script>
     <script src="../scripts/windows.ts"></script>
     <script src="../scripts/authUser.ts"></script>
     <script type="module" src="../main.ts"></script>

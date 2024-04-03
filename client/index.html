@@ -24,12 +24,14 @@
           </a>
 
           <div class="flex justify-end flex-1">
-            <div class=" items-center gap-4">
-              <button
-                class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent"
+            <div class=" items-center flex gap-x-2">
+              <a href="/src/pages/init.html"
+                class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent">Chat
+              </a>
+              <a class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent"
                 id="btn-logout">Cerrar
                 sesion
-              </button>
+              </a>
             </div>
           </div>
 
@@ -82,10 +84,166 @@
     </div>
   </main>
 
+  <div class="bg-gray-50 py-12 lg:py-16">
+    <div class="container px-4 md:px-6">
+      <div class="grid gap-6 lg:grid-cols-2 lg:gap-12">
+        <div class="flex flex-col justify-center space-y-4">
+          <div class="space-y-2">
+            <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+              Asistente Virtual
+            </div>
+            <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+              Chat de IA: Tu asistente virtual inteligente
+            </h1>
+            <p class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Habla con confianza. Nuestro chat de IA está aquí para ayudarte con respuestas inteligentes y
+              conocimientos expertos. Ya sea que tengas preguntas, necesites recomendaciones o busques soporte,
+              nuestro asistente virtual está disponible las 24 horas del día, los 7 días de la semana.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center space-y-4">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Características</h2>
+            <p class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Nuestro chat de IA está equipado con una variedad de funciones poderosas para mejorar tu experiencia.
+              Aquí hay algunas de las cosas que puede hacer:
+            </p>
+          </div>
+          <ul class="grid gap-2 py-4">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="mr-2 inline-block h-4 w-4">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Responder preguntas con información precisa y actualizada.
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="mr-2 inline-block h-4 w-4">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Proporcionar recomendaciones personalizadas en base a tus preferencias.
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="mr-2 inline-block h-4 w-4">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Ofrecer soporte al cliente con respuestas rápidas y soluciones efectivas.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="w-full py-12 md:py-24 lg:py-32">
+    <div class="container px-4 md:px-6">
+      <div class="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
+        <img src="https://res.cloudinary.com/dncmrwppr/image/upload/v1711164709/hero_f8doll.png"
+          alt="Astronaut in the air" widths={[200, 400, 600]} sizes="(max-width: 800px) 100vw, 620px" loading="eager"
+          format="avif" />
+        <div class="flex flex-col justify-center space-y-4">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Cómo funciona</h2>
+            <p
+              class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Nuestro chat de IA utiliza algoritmos avanzados de aprendizaje automático para comprender y responder a
+              tus mensajes de manera inteligente y precisa. A medida que interactúas con nuestro asistente virtual, se
+              adapta a tus necesidades y preferencias, brindándote una experiencia personalizada y eficiente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full py-12 md:py-24 lg:py-32">
+    <div class="container flex flex-col items-center justify-center px-4 md:px-6 space-y-4">
+      <div class="text-center">
+        <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">Ventajas</div>
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Beneficios del chat de IA</h2>
+        <p
+          class="max-w-[800px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+          Experimenta la magia del chat de IA y descubre una nueva forma de comunicarte. Aquí tienes algunos
+          beneficios de usar nuestro asistente virtual:
+        </p>
+      </div>
+      <div class="max-w-sm w-full">
+        <ul class="grid gap-4 md:gap-6 lg:gap-8 mt-4">
+          <li class="grid gap-2 md:gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="w-4 h-4 grid place-self-start/top">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <p class="text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
+              Reducción de costos al no requerir personal de atención al cliente en vivo.
+            </p>
+          </li>
+          <li class="grid gap-2 md:gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="w-4 h-4 grid place-self-start/top">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <p class="text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
+              Mejora de la eficiencia al manejar múltiples consultas simultáneamente.
+            </p>
+          </li>
+          <li class="grid gap-2 md:gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="w-4 h-4 grid place-self-start/top">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <p class="text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
+              Capacidad de brindar respuestas rápidas y precisas.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="w-full py-12 md:py-24 lg:py-32">
+    <div class="container px-4 md:px-6">
+      <div class="grid gap-6 lg:grid-cols-2 lg:gap-12">
+        <div class="space-y-2">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Testimonios</h2>
+          <p class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            Los clientes adoran nuestro chat de IA. Aquí tienes lo que están diciendo:
+          </p>
+        </div>
+        <div class="space-y-4 lg:space-y-8">
+          <div class="flex items-center space-x-4">
+            <img src="/placeholder.svg" width="48" height="48" alt="User" class="rounded-full"
+              style="aspect-ratio: 48 / 48; object-fit: cover;" />
+            <blockquote class="text-sm italic text-gray-500 md:text-base dark:text-gray-400">
+              El chat de IA ha mejorado significativamente la forma en que interactuamos con nuestros clientes. Ahora
+              podemos ofrecer soporte las 24 horas del día, los 7 días de la semana, y nuestros clientes aprecian la
+              capacidad de obtener respuestas rápidas y precisas. - Juan Pérez, Director de Servicio al Cliente
+            </blockquote>
+          </div>
+          <div class="flex items-center space-x-4">
+            <img src="/placeholder.svg" width="48" height="48" alt="User" class="rounded-full"
+              style="aspect-ratio: 48 / 48; object-fit: cover;" />
+            <blockquote class="text-sm italic text-gray-500 md:text-base dark:text-gray-400">
+              El chat de IA ha mejorado significativamente la forma en que interactuamos con nuestros clientes. Ahora
+              podemos ofrecer soporte las 24 horas del día, los 7 días de la semana, y nuestros clientes aprecian la
+              capacidad de obtener respuestas rápidas y precisas. - Juan Pérez, Director de Servicio al Cliente
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <section class="bg-white dark:bg-gray-950">
+
+  <section class="bg-black dark:bg-white">
     <div class="container flex flex-col items-center px-4 py-[4.5rem] mx-auto text-center">
-      <h2 class="text-2xl font-bold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+      <h2 class="text-2xl font-bold tracking-tight text-white xl:text-3xl dark:text-white">
 
         ¡Agradecemos que formes parte de esta experiencia!
       </h2>

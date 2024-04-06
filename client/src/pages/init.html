@@ -24,8 +24,7 @@
                         <div class=" items-center gap-4">
                             <button
                                 class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent"
-                                id="btn-logout">Cerrar
-                                sesion
+                                id="btn-logout">Log out
                             </button>
                         </div>
                     </div>
@@ -39,9 +38,10 @@
                     </a>
                     <div class="flex justify-end flex-1">
                         <div class="hidden lg:flex items-center gap-4">
-                            <a href="./src/pages/login.html">Iniciar sesion</a>
+                            <a href="./src/pages/login.html">Log in</a>
                             <a href="./src/pages/register.html"
-                                class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent">Registrarse
+                                class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent">
+                                Sign up
                             </a>
                         </div>
                     </div>
@@ -52,14 +52,15 @@
 
     <div class="space-y-1.5 flex justify-center flex-col items-center ">
 
-        <p class="text-gray-500 dark:text-gray-400 my-10">Welcome, user!</p>
+        <p class="hidden md:flex text-gray-500 dark:text-gray-400 my-10">Welcome, user!</p>
     </div>
 
     <div class="w-full max-w-3xl mx-auto space-y-4">
         <div class="grid gap-2">
             <div class="flex items-center space-x-2">
+                <!-- button inline-flex -->
                 <button
-                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full p-2 h-10 w-10">
+                    class="hidden  items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full p-2 h-10 w-10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="w-4 h-4">

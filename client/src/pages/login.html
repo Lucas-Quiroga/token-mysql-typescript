@@ -18,9 +18,10 @@
             </a>
             <div class="flex justify-end flex-1">
                 <div class="hidden lg:flex items-center gap-4">
-                    <a href="./login.html">Iniciar sesion</a>
+                    <a href="./login.html">Log in</a>
                     <a href="./register.html"
-                        class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent">Registrarse
+                        class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent">
+                        Sign up
                     </a>
                 </div>
             </div>
@@ -30,11 +31,11 @@
 
     <main>
         <!-- LOGIN FORM -->
-        <section class="max-w-4xl mt-[10%] p-6 mx-auto items-center bg-white rounded-md shadow-md dark:bg-gray-800">
+        <section class="max-w-4xl mt-[10%] p-6 mx-auto items-center bg-white lg:rounded-md shadow-md dark:bg-gray-800">
 
             <div id="successMsgLogin" class="text-2xl text-green-400"></div>
             <div id="errorMsgLogin" class="text-2xl text-red-400"></div>
-            <h2 class="text-lg font-semibold text-gray-700 dark:text-white">Por favor, complete sus datos.
+            <h2 class="text-lg font-semibold text-gray-700 dark:text-white">Please complete your data.
             </h2>
             <form id="formLogin">
                 <div class="grid grid-cols-1 gap-6 mt-4">
@@ -45,7 +46,7 @@
                     </div>
 
                     <div>
-                        <label class="text-gray-700 dark:text-gray-200">Contraseña</label>
+                        <label class="text-gray-700 dark:text-gray-200">Password</label>
                         <input id="passwordLogin" type="password" autocomplete="current-password"
                             class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
                     </div>
@@ -55,10 +56,10 @@
                 <div class="flex justify-end mt-6">
                     <button
                         class="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
-                        type="submit">Ingresar</button>
+                        type="submit">Login</button>
                 </div>
                 <div class="hidden items-center" id="spinnerLogin">
-                    <p class="text-white text-2xl animate-bounce">Procesando...</p>
+                    <p class="text-white text-2xl animate-bounce">Processing...</p>
                 </div>
             </form>
         </section>

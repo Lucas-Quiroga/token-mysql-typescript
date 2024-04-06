@@ -64,11 +64,11 @@ function displayMessage(text: string, sender: string) {
       sender === "You" ? "end" : "start"
     }">
       <div class="grid gap-1.5">
-        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm p-4">${text}</div>
-        <div class="text-xs text-gray-500 dark:text-gray-400">${sender}</div>
+        <div class="bg-gray-100 rounded-lg shadow-sm p-4">${text}</div>
+        <div class="text-xs text-gray-500 ">${sender}</div>
       </div>
       <div class="flex flex-col items-center space-y-1">
-        <div class="text-xs font-medium text-gray-500 dark:text-gray-400">${getCurrentTime()}</div>
+        <div class="text-xs font-medium text-gray-500 ">${getCurrentTime()}</div>
       
       </div>
     </div>

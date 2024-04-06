@@ -28,9 +28,8 @@
               <a href="/src/pages/init.html"
                 class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent">Chat
               </a>
-              <a class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent"
-                id="btn-logout">Cerrar
-                sesion
+              <a class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent cursor-pointer"
+                id="btn-logout">Log out
               </a>
             </div>
           </div>
@@ -41,16 +40,17 @@
       <!-- navbar usuario no logeado -->
       <nav class="flex justify-between bg-gray-950 text-white w-full" id="navbar-unauthenticated">
         <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-          <a class="text-3xl font-bold font-heading" href="#">
+          <a class="text-xl md:text-3xl font-bold font-heading" href="#">
             <!-- <img class="h-9" src="logo.png" alt="logo"> -->
             SureTalk AI
           </a>
 
           <div class="flex justify-end flex-1">
-            <div class="hidden lg:flex items-center gap-4">
-              <a href="./src/pages/login.html">Iniciar sesion</a>
+            <div class="items-center gap-4">
+              <a href="./src/pages/login.html" class="mr-4">Log in</a>
               <a href="./src/pages/register.html"
-                class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent">Registrarse
+                class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2 bg-white text-black hover:bg-gray-200  border-2 border-transparent">
+                Sign up
               </a>
             </div>
           </div>
@@ -73,18 +73,23 @@
         alt="Astronaut in the air" widths={[200, 400, 600]} sizes="(max-width: 800px) 100vw, 620px" loading="eager"
         format="avif" />
     </div>
-    <div>
-      <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-        Bienvenidos a SureTalk AI
+    <div class="mb-10 md:mb-0">
+      <h1
+        class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-center md:text-start">
+        Welcome to SureTalk AI!
       </h1>
-      <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        Encantado de conocerte. Soy una Inteligencia Artificial creada por Lucas. <wbr/> Estoy aquí para ayudarte en lo que necesites. No dudes en hacerme cualquier pregunta o consulta. Estoy a tu disposición.
+      <p class="text-lg mt-4 text-slate-600 max-w-xl text-center md:text-start">
+        <em>It's a real pleasure to meet you. I am an open source Artificial Intelligence developed by Mistral AI, a
+          French startup dedicated to artificial intelligence.</em> <br /><br> <b>However, I am here today thanks to the
+          application created by Lucas.</b> I am available to give you all the assistance you need. Do not hesitate to
+        ask any question or query.
       </p>
+
 
     </div>
   </main>
 
-  <div class="bg-gray-50 py-12 lg:py-16">
+  <!-- <div class="bg-gray-50 py-12 lg:py-16">
     <div class="container px-4 md:px-6">
       <div class="grid gap-6 lg:grid-cols-2 lg:gap-12">
         <div class="flex flex-col justify-center space-y-4">
@@ -139,118 +144,118 @@
         </div>
       </div>
     </div>
-  </div>
-  <section class="w-full py-12 md:py-24 lg:py-32">
-    <div class="container px-4 md:px-6">
-      <div class="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-        <img src="https://res.cloudinary.com/dncmrwppr/image/upload/v1711164709/hero_f8doll.png"
-          alt="Astronaut in the air" widths={[200, 400, 600]} sizes="(max-width: 800px) 100vw, 620px" loading="eager"
-          format="avif" />
-        <div class="flex flex-col justify-center space-y-4">
-          <div class="space-y-2">
-            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Cómo funciona</h2>
-            <p
-              class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Nuestro chat de IA utiliza algoritmos avanzados de aprendizaje automático para comprender y responder a
-              tus mensajes de manera inteligente y precisa. A medida que interactúas con nuestro asistente virtual, se
-              adapta a tus necesidades y preferencias, brindándote una experiencia personalizada y eficiente.
-            </p>
+  </div> -->
+  <!-- <section class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container px-4 md:px-6">
+        <div class="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
+          <img src="https://res.cloudinary.com/dncmrwppr/image/upload/v1711164709/hero_f8doll.png"
+            alt="Astronaut in the air" widths={[200, 400, 600]} sizes="(max-width: 800px) 100vw, 620px" loading="eager"
+            format="avif" />
+          <div class="flex flex-col justify-center space-y-4">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Cómo funciona</h2>
+              <p
+                class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                Nuestro chat de IA utiliza algoritmos avanzados de aprendizaje automático para comprender y responder a
+                tus mensajes de manera inteligente y precisa. A medida que interactúas con nuestro asistente virtual, se
+                adapta a tus necesidades y preferencias, brindándote una experiencia personalizada y eficiente.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="w-full py-12 md:py-24 lg:py-32">
-    <div class="container flex flex-col items-center justify-center px-4 md:px-6 space-y-4">
-      <div class="text-center">
-        <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">Ventajas</div>
-        <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Beneficios del chat de IA</h2>
-        <p
-          class="max-w-[800px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-          Experimenta la magia del chat de IA y descubre una nueva forma de comunicarte. Aquí tienes algunos
-          beneficios de usar nuestro asistente virtual:
-        </p>
-      </div>
-      <div class="max-w-sm w-full">
-        <ul class="grid gap-4 md:gap-6 lg:gap-8 mt-4">
-          <li class="grid gap-2 md:gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="w-4 h-4 grid place-self-start/top">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <p class="text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
-              Reducción de costos al no requerir personal de atención al cliente en vivo.
-            </p>
-          </li>
-          <li class="grid gap-2 md:gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="w-4 h-4 grid place-self-start/top">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <p class="text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
-              Mejora de la eficiencia al manejar múltiples consultas simultáneamente.
-            </p>
-          </li>
-          <li class="grid gap-2 md:gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="w-4 h-4 grid place-self-start/top">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <p class="text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
-              Capacidad de brindar respuestas rápidas y precisas.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="w-full py-12 md:py-24 lg:py-32">
-    <div class="container px-4 md:px-6">
-      <div class="grid gap-6 lg:grid-cols-2 lg:gap-12">
-        <div class="space-y-2">
-          <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Testimonios</h2>
-          <p class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            Los clientes adoran nuestro chat de IA. Aquí tienes lo que están diciendo:
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container flex flex-col items-center justify-center px-4 md:px-6 space-y-4">
+        <div class="text-center">
+          <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">Ventajas</div>
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Beneficios del chat de IA</h2>
+          <p
+            class="max-w-[800px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            Experimenta la magia del chat de IA y descubre una nueva forma de comunicarte. Aquí tienes algunos
+            beneficios de usar nuestro asistente virtual:
           </p>
         </div>
-        <div class="space-y-4 lg:space-y-8">
-          <div class="flex items-center space-x-4">
-            <img src="/placeholder.svg" width="48" height="48" alt="User" class="rounded-full"
-              style="aspect-ratio: 48 / 48; object-fit: cover;" />
-            <blockquote class="text-sm italic text-gray-500 md:text-base dark:text-gray-400">
-              El chat de IA ha mejorado significativamente la forma en que interactuamos con nuestros clientes. Ahora
-              podemos ofrecer soporte las 24 horas del día, los 7 días de la semana, y nuestros clientes aprecian la
-              capacidad de obtener respuestas rápidas y precisas. - Juan Pérez, Director de Servicio al Cliente
-            </blockquote>
+        <div class="max-w-sm w-full">
+          <ul class="grid gap-4 md:gap-6 lg:gap-8 mt-4">
+            <li class="grid gap-2 md:gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-4 h-4 grid place-self-start/top">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
+                Reducción de costos al no requerir personal de atención al cliente en vivo.
+              </p>
+            </li>
+            <li class="grid gap-2 md:gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-4 h-4 grid place-self-start/top">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
+                Mejora de la eficiencia al manejar múltiples consultas simultáneamente.
+              </p>
+            </li>
+            <li class="grid gap-2 md:gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-4 h-4 grid place-self-start/top">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
+                Capacidad de brindar respuestas rápidas y precisas.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container px-4 md:px-6">
+        <div class="grid gap-6 lg:grid-cols-2 lg:gap-12">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Testimonios</h2>
+            <p class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Los clientes adoran nuestro chat de IA. Aquí tienes lo que están diciendo:
+            </p>
           </div>
-          <div class="flex items-center space-x-4">
-            <img src="/placeholder.svg" width="48" height="48" alt="User" class="rounded-full"
-              style="aspect-ratio: 48 / 48; object-fit: cover;" />
-            <blockquote class="text-sm italic text-gray-500 md:text-base dark:text-gray-400">
-              El chat de IA ha mejorado significativamente la forma en que interactuamos con nuestros clientes. Ahora
-              podemos ofrecer soporte las 24 horas del día, los 7 días de la semana, y nuestros clientes aprecian la
-              capacidad de obtener respuestas rápidas y precisas. - Juan Pérez, Director de Servicio al Cliente
-            </blockquote>
+          <div class="space-y-4 lg:space-y-8">
+            <div class="flex items-center space-x-4">
+              <img src="/placeholder.svg" width="48" height="48" alt="User" class="rounded-full"
+                style="aspect-ratio: 48 / 48; object-fit: cover;" />
+              <blockquote class="text-sm italic text-gray-500 md:text-base dark:text-gray-400">
+                El chat de IA ha mejorado significativamente la forma en que interactuamos con nuestros clientes. Ahora
+                podemos ofrecer soporte las 24 horas del día, los 7 días de la semana, y nuestros clientes aprecian la
+                capacidad de obtener respuestas rápidas y precisas. - Juan Pérez, Director de Servicio al Cliente
+              </blockquote>
+            </div>
+            <div class="flex items-center space-x-4">
+              <img src="/placeholder.svg" width="48" height="48" alt="User" class="rounded-full"
+                style="aspect-ratio: 48 / 48; object-fit: cover;" />
+              <blockquote class="text-sm italic text-gray-500 md:text-base dark:text-gray-400">
+                El chat de IA ha mejorado significativamente la forma en que interactuamos con nuestros clientes. Ahora
+                podemos ofrecer soporte las 24 horas del día, los 7 días de la semana, y nuestros clientes aprecian la
+                capacidad de obtener respuestas rápidas y precisas. - Juan Pérez, Director de Servicio al Cliente
+              </blockquote>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section> -->
 
 
-  <section class="bg-black dark:bg-white">
+  <section class="bg-black">
     <div class="container flex flex-col items-center px-4 py-[4.5rem] mx-auto text-center">
       <h2 class="text-2xl font-bold tracking-tight text-white xl:text-3xl dark:text-white">
 
-        ¡Agradecemos que formes parte de esta experiencia!
+        I appreciate you being part of this experience!
       </h2>
 
       <p class="block max-w-4xl mt-4 text-gray-500 dark:text-gray-300">
-        Creemos firmemente en la importancia de una experiencia de usuario satisfactoria. Por eso, ofrecemos seguridad y
-        confidencialidad para que pueda evaluar el proyecto en su totalidad.
+        I firmly believe in the importance of a satisfactory user experience. Therefore, I offer security and
+        confidentiality so that you can evaluate the project in its entirety.
       </p>
 
 

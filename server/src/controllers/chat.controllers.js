@@ -16,16 +16,19 @@ export async function getQuestion(req, res) {
       return res.status(400).json({ error: "Invalid question" });
     }
 
+    // Construye el texto de la pregunta con el formato de instrucción requerido
+    const prompt = `[INST]${question}[/INST]"`;
+
+    // Realiza la generación de texto con el modelo
     const result = await hf.textGeneration({
       model,
-      inputs: question,
-      options: {
-        language: "es",
-      },
+      inputs: prompt,
     });
 
     // Elimina la pregunta de la respuesta
-    const answer = result.generated_text.replace(question, "").trim();
+    let answer = result.generated_text.replace(question, "").trim();
+    // y elimina [INST][/INST]
+    answer = answer.replace("[INST]", "").replace("[/INST]", "").trim();
 
     res.json({ answer });
   } catch (error) {
